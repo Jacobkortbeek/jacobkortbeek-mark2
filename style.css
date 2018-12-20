@@ -13,3 +13,188 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+html, body {
+  font-family: 'Major Mono Display', monospace;
+  color: white; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Major Mono Display', monospace; }
+
+.test1 {
+  background: red; }
+
+.test2 {
+  background: limegreen; }
+
+.test3 {
+  background: blue; }
+
+.test4 {
+  background: pink; }
+
+a {
+  color: #ffffff; }
+  a i {
+    font-size: 2.3em; }
+
+.fullHeight {
+  height: 100vh; }
+
+.tabs {
+  height: auto;
+  white-space: normal; }
+
+.tab {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0; }
+
+.tab-content {
+  height: 200px;
+  width: 100%;
+  background: #fcfcfc;
+  border: 1px solid #f0f0f0; }
+
+.indicator {
+  display: none; }
+
+.card-image {
+  max-height: 22em; }
+
+.fp-controlArrow {
+  margin-left: 5.5em;
+  margin-right: 5.5em; }
+  @media only screen and (min-width: 300px) and (max-width: 1000px) {
+    .fp-controlArrow {
+      display: none; } }
+
+.arrow {
+  position: fixed;
+  margin: auto;
+  bottom: 5em;
+  right: 50%; }
+  @media only screen and (min-width: 300px) and (max-width: 1000px) {
+    .arrow {
+      display: none; } }
+  .arrow .nav img {
+    width: 6em; }
+
+.navigation {
+  z-index: 999;
+  position: fixed;
+  right: 2em;
+  top: 2em; }
+
+.home .hero {
+  background-color: #f06868; }
+
+.home .about {
+  background-color: #4d90e4; }
+  .home .about .abImg img {
+    border-radius: 5000px; }
+
+.home .code {
+  background-color: #90eeab; }
+  .home .code .skills a {
+    font-family: 'Montserrat', sans-serif; }
+    .home .code .skills a img {
+      width: 2.5em;
+      color: white; }
+
+.home .design {
+  background-color: #ebb463; }
+
+.home .portfolio {
+  background-color: #b633ff; }
+
+.home .reading {
+  background-color: #e7c09c; }
+
+.home .blog {
+  background-color: #c8f388; }
+
+.home .contact {
+  background-color: #67a9e6; }
+  .home .contact form label {
+    font-size: 1em;
+    color: white; }
+    .home .contact form label span input {
+      border-bottom: 1px solid white; }
+    .home .contact form label span textarea {
+      border: 1px solid white; }
+  .home .contact form input[type="submit"] {
+    background-color: transparent;
+    color: white; }
+  .home .contact .straight a {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .home .contact .straight a i {
+      margin-right: 0.25em; }
+
+.design-page {
+  height: 100%;
+  background-color: #ebb463; }
+  .design-page .img-cont img {
+    width: 100%; }
+  .design-page .img-cont button {
+    z-index: 9;
+    background-color: white;
+    position: absolute;
+    bottom: 125px;
+    right: 16px; }
+
+.portfolio-page {
+  background-color: #b633ff; }
+  .portfolio-page img {
+    width: 100%; }
+
+.reading-page {
+  background-color: #e7c09c; }
+  .reading-page img {
+    width: 100%; }
+
+.blog-page {
+  background-color: #c8f388; }
+  .blog-page img {
+    width: 100%; }
+  .blog-page .card button {
+    z-index: 9;
+    background-color: white;
+    position: absolute;
+    bottom: 125px;
+    right: 16px; }
+  .blog-page .img-cont {
+    position: relative; }
+    .blog-page .img-cont img {
+      width: 100%; }
+    .blog-page .img-cont button {
+      z-index: 9;
+      background-color: white;
+      position: absolute;
+      bottom: 125px;
+      right: 16px; }
+  .blog-page .post-pad {
+    margin-top: 1em; }
+
+.card button {
+  z-index: 9;
+  background-color: white;
+  position: absolute;
+  bottom: 125px;
+  right: 16px; }
+
+.img-cont {
+  position: relative; }
+  .img-cont img {
+    width: 100%; }
+  .img-cont button {
+    z-index: 9;
+    background-color: white;
+    position: absolute;
+    bottom: 125px;
+    right: 16px; }
+
+.post-pad {
+  margin-top: 1em; }
