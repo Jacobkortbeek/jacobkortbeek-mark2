@@ -71,7 +71,7 @@
             <div class="row">
               <div class="col s12">
                 <div class="col-content abHeight skills flow-text">
-                  <h2 class="center-align"><?php the_field( 'skills_title' ); ?>s</h2>
+                  <h2 class="center-align"><?php the_field( 'skills_title' ); ?></h2>
                   <p class="center-align">
                     <?php the_field( 'skills_sub_title' ); ?>
                   </p>
@@ -87,9 +87,9 @@
             <div class="row center-align">
               <div class="col s12">
                 <div class="col-content">
-                  <h2 class="center-align">My Skills</h2>
+                  <h2 class="center-align"><?php the_field( 'skill_slide_one_title' ); ?></h2>
                   <p class="center-align">
-                    These are my most comonly used skills
+                    <?php the_field( 'skills_slide_one_sub_title' ); ?>
                   </p>
                 </div>
                 <div class="col s12 skills">
