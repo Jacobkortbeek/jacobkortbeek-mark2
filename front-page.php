@@ -55,7 +55,7 @@
             <div class="col s12">
               <div class="col-content abHeight center-align">
                 <h4><?php the_field( 'social_title' ); ?></h4>
-                <?php if( has_rows( 'fa_icon_social' ) ) : while ( have_rows('fa_icon_social') ) : the_row(); ?>
+                <?php if( have_rows( 'fa_icon_social' ) ) : while ( have_rows('fa_icon_social') ) : the_row(); ?>
                   <a href="<?php the_sub_field('link'); ?>" class="tooltipped" data-position="bottom" data-tooltip="<?php the_sub_field('tool_tip'); ?>"><i class="fab <?php the_sub_field('fa_label'); ?>"></i></a>
                 <?php endwhile; endif; ?>
               </div>
