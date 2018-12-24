@@ -1,3 +1,5 @@
+jQuery(document).ready(function($) {
+
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		menu: '#menu',
@@ -46,3 +48,4 @@ $(document).ready(function(){
 				draggable : true
 			});
 	  });
+}
