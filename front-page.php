@@ -120,16 +120,6 @@ else :
     // no layouts found
 
 endif; ?>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="HTML 5"><i class="fab fa-html5"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="CSS 3"><i class="fab fa-css3-alt"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="JavaScript"><i class="fab fa-js"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Sass"><i class="fab fa-sass"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="NPM"><i class="fab fa-npm"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Gulp"><i class="fab fa-gulp"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="WP-PHP"><i class="fab fa-php"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="github"><i class="fab fa-github"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="NodeJS"><i class="fab fa-node"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="SQL"><i class="fas fa-database"></i></a>
                     <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Liquid"><img src="assets/img/shopify.svg" alt=""></a>
                     <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Photoshop"><img src="assets/img/adobephotoshop.svg" alt=""></a>
                     <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Illustrator"><img src="assets/img/adobeillustrator.svg" alt=""></a>
