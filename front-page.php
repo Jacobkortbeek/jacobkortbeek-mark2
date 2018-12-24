@@ -20,15 +20,17 @@
             <div class="col s12 m6">
               <div class="col-content abHeight">
                 <div class="abImg center-align">
-                  <img src="assets/img/jacob-300x300.jpg" alt="">
+                  <?php if ( get_field( 'headshot') ) { ?>
+	                  <img src="<?php the_field( 'headshot' ); ?>" />
+                  <?php } ?>
                 </div>
               </div>
             </div>
             <div class="col s12 m6">
               <div class="col-content abHeight">
-                <h3>About Me</h3>
+                <h3><?php the_field( 'about_title' ); ?></h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <?php the_field( 'about_information' ); ?>
                 </p>
               </div>
             </div>
