@@ -94,6 +94,32 @@
                 </div>
                 <div class="col s12 skills">
                   <div class="col-content flow-text">
+                    <?php if( have_rows('skills') ):
+
+     // loop through the rows of data
+    while ( have_rows('skills') ) : the_row();
+
+        if( get_row_layout() == 'fa_icon_skills' ): ?>
+
+        <?php if( have_rows( 'fa_icon_skill' ) ) : while ( have_rows('fa_icon_skill') ) : the_row(); ?>
+          <a href="<?php the_sub_field('fa_link'); ?>" class="tooltipped" data-position="bottom" data-tooltip="<?php the_sub_field('fa_tool_tip'); ?>"><i class="fab <?php the_sub_field('fa_skill'); ?>"></i></a>
+        <?php endwhile; endif; ?>
+
+      <?php elseif( get_row_layout() == 'skill_img' ): ?>
+
+        <?php if( have_rows( 'skill_img' ) ) : while ( have_rows('skill_img') ) : the_row(); ?>
+          <a href="<?php the_sub_field('img_link'); ?>" class="tooltipped" data-position="bottom" data-tooltip="<?php the_sub_field('skill_image_tool_tip'); ?>"><i class="fab <?php the_sub_field('skill_image'); ?>"></i></a>
+        <?php endwhile; endif; ?>
+
+        <?php endif;
+
+    endwhile;
+
+else :
+
+    // no layouts found
+
+endif; ?>
                     <a href="#" class="tooltipped" data-position="bottom" data-tooltip="HTML 5"><i class="fab fa-html5"></i></a>
                     <a href="#" class="tooltipped" data-position="bottom" data-tooltip="CSS 3"><i class="fab fa-css3-alt"></i></a>
                     <a href="#" class="tooltipped" data-position="bottom" data-tooltip="JavaScript"><i class="fab fa-js"></i></a>
