@@ -42,8 +42,8 @@
           <div class="row">
             <div class="col s12">
               <div class="col-content abHeight">
-                <h4 class="center-align">What I Am Reading</h4>
-                <h5 class="center-align">The End of Average</h5>
+                <h4 class="center-align"><?php the_field( 'second_slide_title' ); ?></h4>
+                <h5 class="center-align"><?php the_field( 'second_information' ); ?></h5>
               </div>
             </div>
           </div>
