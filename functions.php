@@ -14,7 +14,7 @@
     wp_enqueue_script( 'fulpage', get_template_directory_uri() . '/js/fullpage.js', array('jquery'), ' ', true );
     wp_enqueue_script( 'functions', get_template_directory_uri() . '/js/function.js', array('jquery'), ' ', true );
     wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/js/jquery.matchHeight.js', array('jquery'), ' ', true );
-    wp_enqueue_script( 'material', get_template_directory_uri() . '/js/material.js', array('jquery'), ' ', true );
+    wp_enqueue_script( 'material', get_template_directory_uri() . '/js/material.min.js', array('jquery'), ' ', true );
     wp_enqueue_script( 'materialize', get_template_directory_uri() . '/js/materialize.min.js', array('jquery'), ' ', true );
     wp_enqueue_script( 'scrollFlow', get_template_directory_uri() . '/js/scrolloverflow.js', array('jquery'), ' ', true );
   }
