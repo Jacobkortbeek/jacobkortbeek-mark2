@@ -108,7 +108,7 @@
       <?php elseif( get_row_layout() == 'skill_img' ): ?>
 
         <?php if( have_rows( 'skill_img' ) ) : while ( have_rows('skill_img') ) : the_row(); ?>
-          <a href="<?php the_sub_field('img_link'); ?>" class="tooltipped" data-position="bottom" data-tooltip="<?php the_sub_field('skill_image_tool_tip'); ?>"><i class="fab <?php the_sub_field('skill_image'); ?>"></i></a>
+          <a href="<?php the_sub_field('img_link'); ?>" class="tooltipped" data-position="bottom" data-tooltip="<?php the_sub_field('skill_image_tool_tip'); ?>"><img src="<?php the_sub_field('skill_image'); ?>" alt=""></a>
         <?php endwhile; endif; ?>
 
         <?php endif;
