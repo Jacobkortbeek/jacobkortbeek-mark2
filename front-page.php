@@ -71,9 +71,9 @@
             <div class="row">
               <div class="col s12">
                 <div class="col-content abHeight skills flow-text">
-                  <h2 class="center-align">My Skills</h2>
+                  <h2 class="center-align"><?php the_field( 'skills_title' ); ?>s</h2>
                   <p class="center-align">
-                    Slide to see my skills.
+                    <?php the_field( 'skills_sub_title' ); ?>
                   </p>
                 </div>
               </div>
