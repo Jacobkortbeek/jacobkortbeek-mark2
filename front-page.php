@@ -6,8 +6,8 @@
       <div class="container">
         <div class="row">
           <div class="col s12">
-            <h1 class="center-align animated zoomIn delay-1s">Jacob Kortbeek</h1>
-            <p class="center-align animated slideInLeft delay-2s">Devloper - Desinger - Learner</p>
+            <h1 class="center-align animated zoomIn delay-1s"><?php the_field( 'heading' ); ?></h1>
+            <p class="center-align animated slideInLeft delay-2s"><?php the_field( 'sub_heading' ); ?></p>
           </div>
         </div>
       </div>
