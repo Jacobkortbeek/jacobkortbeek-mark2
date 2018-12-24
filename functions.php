@@ -2,6 +2,7 @@
 
   function wpt_theme_styles() {
     wp_enqueue_style( 'font', 'https://fonts.googleapis.com/css?family=Major+Mono+Display' );
+    wp_enqueue_style( 'font', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' );
     wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css' );
     wp_enqueue_style( 'fullpage', get_template_directory_uri() . '/css/fullpage.css' );
     wp_enqueue_style( 'material', get_template_directory_uri() . '/css/material.min.css'   );
