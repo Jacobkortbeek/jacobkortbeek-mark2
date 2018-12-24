@@ -54,11 +54,10 @@
           <div class="row">
             <div class="col s12">
               <div class="col-content abHeight center-align">
-                <h4>Social Media</h4>
-                <a href="#" class="tooltipped animated slideInLeft delay-30s" data-position="bottom" data-tooltip="@JacobKortbeek"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="tooltipped" data-position="bottom" data-tooltip="@jacobkortbeek"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Jacobkortbeek"><i class="fab fa-github"></i></a>
-                <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Message Me"><i class="fab fa-whatsapp"></i></a>
+                <h4><?php the_field( 'social_title' ); ?></h4>
+                <?php if( has_rows( 'fa_icon_social' ) ) : while ( have_rows('fa_icon_social') ) : the_row(); ?>
+                  <a href="<?php the_sub_field('link'); ?>" class="tooltipped" data-position="bottom" data-tooltip="<?php the_sub_field('tool_tip'); ?>"><i class="fab <?php the_sub_field('fa_label'); ?>"></i></a>
+                <?php endwhile; endif; ?>
               </div>
             </div>
           </div>
