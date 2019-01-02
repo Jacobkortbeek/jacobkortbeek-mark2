@@ -105,11 +105,34 @@
           <a href="<?php the_sub_field('fa_link'); ?>" class="tooltipped" data-position="bottom" data-tooltip="<?php the_sub_field('fa_tool_tip'); ?>"><i class="fab <?php the_sub_field('fa_skill'); ?>"></i></a>
         <?php endwhile; endif; ?>
 
-      <?php elseif( get_row_layout() == 'skill_img' ): ?>
+      <?php elseif( get_row_layout() == 'skill_experience' ): ?>
 
-        <?php if( have_rows( 'skill_img' ) ) : while ( have_rows('skill_img') ) : the_row(); ?>
-          <a href="<?php the_sub_field('img_link'); ?>" class="tooltipped" data-position="bottom" data-tooltip="<?php the_sub_field('skill_image_tool_tip'); ?>"><img src="<?php the_sub_field('skill_image'); ?>" alt=""></a>
-        <?php endwhile; endif; ?>
+        <div class="slide">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <div class="col-content">
+                  <h2 class="center-align"><?php the_sub_field( 'experience_title' ); ?></h2>
+                  <p class="center-align">
+                    These are technologies I have experience with but haven't used extensivly
+                  </p>
+                </div>
+                <div class="col s12 skills">
+                  <div class="col-content flow-text center-align">
+                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Angularjs"><i class="fab fa-angular"></i></a>
+                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Reactjs"><i class="fab fa-react"></i></a>
+                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="MongoDB"><img src="assets/img/mongodb.svg" alt=""></a>
+                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="express">express</a>
+                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="WebPack"><img src="assets/img/webpack.svg" alt=""></a>
+                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Pug">Pug</a>
+                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Premiere Pro"><img src="assets/img/adobepremiere.svg" alt=""></a>
+                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="After Effects"><img src="assets/img/adobeaftereffects.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <?php endif;
 
@@ -132,32 +155,7 @@ endif; ?>
           </div>
         </div>
 
-        <div class="slide">
-          <div class="container">
-            <div class="row">
-              <div class="col s12">
-                <div class="col-content">
-                  <h2 class="center-align">I Have Experence With:</h2>
-                  <p class="center-align">
-                    These are technologies I have experience with but haven't used extensivly
-                  </p>
-                </div>
-                <div class="col s12 skills">
-                  <div class="col-content flow-text center-align">
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Angularjs"><i class="fab fa-angular"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Reactjs"><i class="fab fa-react"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="MongoDB"><img src="assets/img/mongodb.svg" alt=""></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="express">express</a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="WebPack"><img src="assets/img/webpack.svg" alt=""></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Pug">Pug</a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Premiere Pro"><img src="assets/img/adobepremiere.svg" alt=""></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="After Effects"><img src="assets/img/adobeaftereffects.svg" alt=""></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         <div class="slide">
           <div class="container">
