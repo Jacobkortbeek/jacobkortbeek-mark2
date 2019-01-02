@@ -156,9 +156,9 @@ endif; ?>
             <div class="row">
               <div class="col s12">
                 <div class="col-content abHeight skills flow-text">
-                  <h2 class="center-align">My Design Portfolio</h2>
+                  <h2 class="center-align"><?php the_field( 'design_field_heading' ); ?></h2>
                   <p class="center-align">
-                    These are my designs and illustrations
+                    <?php the_field( 'design_field_sub_heading' ); ?>
                   </p>
                   <p class="center-align">
                     (Swipe)
