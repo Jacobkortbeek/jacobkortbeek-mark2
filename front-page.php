@@ -198,9 +198,9 @@ endif; ?>
                   <i class="material-icons">link</i>
                 </button>
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="<?php if ( get_field( 'design_image') ) { ?>
-	<img src="<?php the_field( 'design_image' ); ?>" />
-<?php } ?>">
+                  <?php if ( get_field( 'design_image') ) { ?>
+	<img class="activator" src="<?php the_field( 'design_image' ); ?>" />
+<?php } ?>
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4"><?php the_title(); ?><i class="material-icons right">add</i></span>
