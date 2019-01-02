@@ -138,11 +138,7 @@ else :
     // no layouts found
 
 endif; ?>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Liquid"><img src="assets/img/shopify.svg" alt="">Hellow</a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Photoshop"><img src="assets/img/adobephotoshop.svg" alt=""></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Illustrator"><img src="assets/img/adobeillustrator.svg" alt=""></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Wordpress"><i class="fab fa-wordpress"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Shopify"><img src="assets/img/shopify.svg" alt=""></a>
+
                   </div>
                 </div>
               </div>
