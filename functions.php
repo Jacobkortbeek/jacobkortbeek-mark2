@@ -1,5 +1,7 @@
 <?php
-add_theme_support( 'post-thumbnails' );
+
+  add_theme_support( 'post-thumbnails' );
+  
 function create_posttype() {
 
   register_post_type( 'design',
