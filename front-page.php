@@ -114,19 +114,14 @@
                 <div class="col-content">
                   <h2 class="center-align"><?php the_sub_field( 'experience_title' ); ?></h2>
                   <p class="center-align">
-                    These are technologies I have experience with but haven't used extensivly
+                    <?php the_sub_field( 'experience_sub_heading' ); ?>
                   </p>
                 </div>
                 <div class="col s12 skills">
                   <div class="col-content flow-text center-align">
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Angularjs"><i class="fab fa-angular"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Reactjs"><i class="fab fa-react"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="MongoDB"><img src="assets/img/mongodb.svg" alt=""></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="express">express</a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="WebPack"><img src="assets/img/webpack.svg" alt=""></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Pug">Pug</a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Premiere Pro"><img src="assets/img/adobepremiere.svg" alt=""></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="After Effects"><img src="assets/img/adobeaftereffects.svg" alt=""></a>
+                    <?php if( have_rows( 'experience_fa_icon' ) ) : while ( have_rows('experience_fa_icon') ) : the_row(); ?>
+                      <a href="<?php the_sub_field('experience_icon_link'); ?>" class="tooltipped" data-position="bottom" data-tooltip="<?php the_sub_field('experience_icon_tip_text'); ?>"><i class="fab <?php the_sub_field('expereince_icon'); ?>"></i></a>
+                    <?php endwhile; endif; ?>
                   </div>
                 </div>
               </div>
