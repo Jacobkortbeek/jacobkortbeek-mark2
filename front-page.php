@@ -170,29 +170,58 @@ endif; ?>
 
         </div>
 
-        <div class="slide">
-          <div class="container">
-            <div class="row">
-              <div class="col s12 m6">
-                <div class="col-content">
-                  <div class="card">
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-                      <i class="material-icons">link</i>
-                    </button>
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="assets/img/yuiizaa-september-710275-unsplash.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title 1<i class="material-icons right">add</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
+        <?php
+
+          $num_posts = get_option( 'posts_per_page' );
+
+          $args = array(
+            'post_type' => 'design',
+            'posts_per_page' => $num_posts,
+            'orderby' => 'post_date'
+          );
+
+          $query = new WP_Query( $args );
+
+        ?>
+
+        <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+          <?php if($i===0) : ?>
+            <div class="slide">
+              <div class="container">
+                <div class="row">
+          <?php endif; ?>
+          <div class="col s12 m6">
+            <div class="col-content">
+              <div class="card">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                  <i class="material-icons">link</i>
+                </button>
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="assets/img/yuiizaa-september-710275-unsplash.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title 1<i class="material-icons right">add</i></span>
+                  <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
               </div>
+            </div>
+          </div>
+          <?php if($i===4) : ?>
+          </div>
+            </div>
+              </div>
+          <?php endif; ?>
+        <?php $i++;?>
+        <?php endwhile; endif; wp_reset_postdata(); ?>
+
+        <!-- <div class="slide">
+          <div class="container">
+            <div class="row">
+
 
               <div class="col s12 m6">
                 <div class="col-content">
@@ -259,7 +288,7 @@ endif; ?>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="slide">
           <div class="container">
