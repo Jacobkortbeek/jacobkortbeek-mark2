@@ -1,4 +1,22 @@
 <?php
+add_theme_support( 'post-thumbnails' );
+function create_posttype() {
+
+  register_post_type( 'design',
+  // CPT Options
+      array(
+          'labels' => array(
+              'name' => __( 'Design' ),
+              'singular_name' => __( 'Design' ),
+              'menu_name'           => __( 'Design')
+          ),
+          'public' => true,
+          'has_archive' => true,
+          'rewrite' => array('slug' => 'Design'),
+      )
+  );
+}
+add_action( 'init', 'create_posttype' );
 
   function wpt_theme_styles() {
     wp_enqueue_style( 'font', 'https://fonts.googleapis.com/css?family=Major+Mono+Display' );
