@@ -138,7 +138,7 @@ else :
     // no layouts found
 
 endif; ?>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Liquid"><img src="assets/img/shopify.svg" alt=""></a>
+                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Liquid"><img src="assets/img/shopify.svg" alt="">Hellow</a>
                     <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Photoshop"><img src="assets/img/adobephotoshop.svg" alt=""></a>
                     <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Illustrator"><img src="assets/img/adobeillustrator.svg" alt=""></a>
                     <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Wordpress"><i class="fab fa-wordpress"></i></a>
@@ -150,30 +150,6 @@ endif; ?>
           </div>
         </div>
 
-
-
-        <div class="slide">
-          <div class="container">
-            <div class="row">
-              <div class="col s12">
-                <div class="col-content">
-                  <h2 class="center-align">What I Am Learning</h2>
-                  <p class="center-align">
-                    I give at least one hour a day to learn new languages
-                  </p>
-                </div>
-                <div class="col s12 skills">
-                  <div class="col-content flow-text center-align">
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Reactjs"><i class="fab fa-react"></i></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="MongoDB"><img src="assets/img/mongodb.svg" alt=""></a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="express">express</a>
-                    <a href="#" class="tooltipped" data-position="bottom" data-tooltip="Java"><i class="fab fa-java"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
     </div>
 
