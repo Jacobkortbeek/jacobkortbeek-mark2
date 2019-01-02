@@ -216,6 +216,7 @@ endif; ?>
               </div>
           <?php endif; ?>
         <?php $i++;?>
+        <?php if($i===5) : $i=0; endif; ?>
         <?php endwhile; endif; wp_reset_postdata(); ?>
 
         <!-- <div class="slide">
