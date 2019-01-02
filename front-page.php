@@ -211,13 +211,13 @@ endif; ?>
               </div>
             </div>
           </div>
-          <?php if($i===4) : ?>
+          <?php if($i===3) : ?>
           </div>
             </div>
               </div>
           <?php endif; ?>
         <?php $i++;?>
-        <?php if($i===5) : $i=0; endif; ?>
+        <?php if($i===4) : $i=0; endif; ?>
         <?php endwhile; endif; wp_reset_postdata(); ?>
 
         <!-- <div class="slide">
