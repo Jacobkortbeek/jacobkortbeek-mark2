@@ -198,15 +198,17 @@ endif; ?>
                   <i class="material-icons">link</i>
                 </button>
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="assets/img/yuiizaa-september-710275-unsplash.jpg">
+                  <img class="activator" src="<?php if ( get_field( 'design_image') ) { ?>
+	<img src="<?php the_field( 'design_image' ); ?>" />
+<?php } ?>">
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Card Title 1<i class="material-icons right">add</i></span>
-                  <p><a href="#">This is a link</a></p>
+                  <span class="card-title activator grey-text text-darken-4"><?php the_title(); ?><i class="material-icons right">add</i></span>
+                  <p><a href="<?php the_permalink(); ?>">Click</a></p>
                 </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <span class="card-title grey-text text-darken-4"><?php the_title(); ?><i class="material-icons right">close</i></span>
+                  <p><?php the_excerpt(); ?></p>
                 </div>
               </div>
             </div>
