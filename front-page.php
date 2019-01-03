@@ -221,7 +221,7 @@ endif; ?>
         <?php if($i===4) : $i=0; endif; ?>
         <?php endwhile; endif; wp_reset_postdata(); ?>
 
-        <!-- <div class="slide">
+        <div class="slide">
           <div class="container">
             <div class="row">
 
@@ -290,7 +290,7 @@ endif; ?>
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
 
         <div class="slide">
