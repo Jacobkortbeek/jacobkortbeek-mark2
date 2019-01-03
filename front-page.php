@@ -190,7 +190,6 @@ endif; ?>
               <div class="container">
                 <div class="row">
           <?php endif; ?>
-          <?php echo $i ?>
           <div class="col s12 m6">
             <div class="col-content">
               <div class="card">
