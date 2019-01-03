@@ -185,6 +185,10 @@ a {
   bottom: 125px;
   right: 16px; }
 
+.card{
+  color: black;
+}
+
 .img-cont {
   position: relative; }
   .img-cont img {
